@@ -33,7 +33,7 @@ with st.sidebar:
 if selectSpecies:
     fig = plt.figure(figsize = (7,5))
     for aSpecies in selectSpecies:
-        df = dfIris[dfOris.species==aSpecies]
+        df = dfIris[dfIris.species==aSpecies]
     plt.scatter(df[selectX], df[selectY], color=colors[aSpecies], alpha=selectAlpha, label = aSpecies)
     plt.legend(loc='lower right')
     plt.xlabel(selectX)
