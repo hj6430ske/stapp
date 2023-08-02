@@ -25,7 +25,7 @@ with st.sidebar:
     selectY = st.selectbox(
         'y 변수 선택:', ['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
     ''
-    selectSpecies = st.multiselect('붓꽃 유형 선ㅌ책 (:blue[다중]):', ['setosa', 'versicolor', 'virginica'])
+    selectSpecies = st.multiselect('붓꽃 유형 선택 (:blue[다중]):', ['setosa', 'versicolor', 'virginica'])
     ''
     selectAlpha = st.slider('alpha 설정:', 0.1, 1.0, 0.5)
     
